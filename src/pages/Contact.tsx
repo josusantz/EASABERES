@@ -32,7 +32,7 @@ const Contact = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = async (data: ContactForm) => {
+  const onSubmit = async (_data: ContactForm) => {
     setIsSubmitting(true);
     
     // Simulate form submission
